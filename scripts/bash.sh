@@ -1,6 +1,6 @@
 apt-get update
 apt-get install curl
-cd /usr/share/jitsi-meet/images
+cd ../../usr/share/jitsi-meet/images
 curl -O https://jedendrittendonnerstagimmonat.files.wordpress.com/2014/06/500-x-500-gut.png
 rm watermark.png
 cp 500-x-500-gut.png watermark.png
