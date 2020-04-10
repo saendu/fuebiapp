@@ -1,3 +1,4 @@
+#!/bin/bash
 cd ../../usr/share/jitsi-meet/images
 curl -O https://jedendrittendonnerstagimmonat.files.wordpress.com/2014/06/500-x-500-gut.png
 rm watermark.png
