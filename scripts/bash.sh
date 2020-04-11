@@ -4,6 +4,7 @@ curl -O https://raw.githubusercontent.com/saendu/fuebiapp/master/release/0.3/jit
 curl -O https://raw.githubusercontent.com/saendu/fuebiapp/master/release/0.3/jitsi-meet/images/favicon.ico
 curl -O https://raw.githubusercontent.com/saendu/fuebiapp/master/release/0.3/jitsi-meet/images/fuebilogo.png
 curl -O https://raw.githubusercontent.com/saendu/fuebiapp/master/release/0.3/jitsi-meet/images/fuebilogo_square.png
+curl -O https://raw.githubusercontent.com/saendu/fuebiapp/master/release/0.3/jitsi-meet/images/shots.gif
 cd /usr/share/jitsi-meet/libs
 curl -O https://raw.githubusercontent.com/saendu/fuebiapp/master/libs/0.3/alwaysontop.min.js
 curl -O https://raw.githubusercontent.com/saendu/fuebiapp/master/libs/0.3/analytics-ga.js
@@ -21,6 +22,9 @@ cd /usr/share/jitsi-meet/css
 curl -O https://raw.githubusercontent.com/saendu/fuebiapp/master/release/0.3/jitsi-meet/css/all.css
 cd /config
 curl -O https://raw.githubusercontent.com/saendu/fuebiapp/master/release/0.3/jitsi-meet/interface_config.js
+cd /defaults
+curl -O https://raw.githubusercontent.com/saendu/fuebiapp/master/release/0.3/jitsi-meet/interface_config.js
 cd /usr/share/jitsi-meet
 curl -O https://raw.githubusercontent.com/saendu/fuebiapp/master/release/0.3/jitsi-meet/title.html
+curl -O https://raw.githubusercontent.com/saendu/fuebiapp/master/release/0.3/jitsi-meet/interface_config.js
 
