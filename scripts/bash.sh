@@ -19,9 +19,8 @@ curl -O https://raw.githubusercontent.com/saendu/fuebiapp/master/libs/0.3/rnnois
 curl -O https://raw.githubusercontent.com/saendu/fuebiapp/master/libs/0.3/video-blur-effect.min.js
 cd /usr/share/jitsi-meet/css
 curl -O https://raw.githubusercontent.com/saendu/fuebiapp/master/release/0.3/jitsi-meet/css/all.css
-cd /defaults
+cd /config
 curl -O https://raw.githubusercontent.com/saendu/fuebiapp/master/release/0.3/jitsi-meet/interface_config.js
 cd /usr/share/jitsi-meet
-curl -O https://raw.githubusercontent.com/saendu/fuebiapp/master/release/0.3/jitsi-meet/interface_config.js
 curl -O https://raw.githubusercontent.com/saendu/fuebiapp/master/release/0.3/jitsi-meet/title.html
 
