@@ -1,6 +1,0 @@
-Package: fuebiapp-web
-Version: 0.1
-Architecture: all
-Maintainer: Sandro Felder <sandrek@gmail.com>
-Description: Web App installation
- This package contains the REACT web app based on jitsi-web
