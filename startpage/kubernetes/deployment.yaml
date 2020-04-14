@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: fuebiapp-startpage
+  namespace: jitsi
   labels:
     app: fuebiapp
 spec:
@@ -16,7 +17,7 @@ spec:
     spec:
       containers:
       - name: fuebiapp
-        image: blacktr/fuebi-startpage-arm:latest
+        image: blacktr/fuebi-startpage:latest
         ports:
         - containerPort: 80
         imagePullPolicy: Always

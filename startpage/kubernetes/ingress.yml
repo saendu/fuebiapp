@@ -1,16 +1,17 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: fuebiapp-pi-ingress
+  name: fuebiapp-startpage-ingress
+  namespace: jitsi
   annotations:
     ingress.kubernetes.io/rewrite-target: /
 spec:
   tls:
-    - secretName: fuebiapp-com-tls
+    - secretName: tls-secret
       hosts:
-        - pi.fuebiapp.com
+        - fuebiapp.com
   rules:
-  - host: pi.fuebiapp.com
+  - host: fuebiapp.com
     http:
         paths:
           - backend:
