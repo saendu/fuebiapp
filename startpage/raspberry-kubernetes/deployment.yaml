@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fuebiapp
+  labels:
+    app: fuebiapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fuebiapp
+  template:
+    metadata:
+      labels:
+        app: fuebiapp
+    spec:
+      containers:
+      - name: fuebiapp
+        image: blacktr/fuebi-startpage:latest
+        ports:
+        - containerPort: 80
+        imagePullPolicy: Always
