@@ -7,7 +7,7 @@ metadata:
     ingress.kubernetes.io/rewrite-target: /
 spec:
   tls:
-    - secretName: tls-secret
+    - secretName: fuebiapp-com-tls
       hosts:
         - fuebiapp.com
   rules:
@@ -17,3 +17,10 @@ spec:
           - backend:
               serviceName: fuebiapp-startpage-service
               servicePort: 80
+  - host: www.fuebiapp.com
+    http:
+        paths:
+          - backend:
+              serviceName: fuebiapp-startpage-service
+              servicePort: 80
+
