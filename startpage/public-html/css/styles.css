@@ -167,12 +167,20 @@ sup {
   top: -0.5em;
 }
 
+.stores {
+  margin-top: 5px;
+}
+
 a {
   color: white;
-  text-decoration: none;
   background-color: transparent;
+  text-decoration: underline;
   
 }
+a,
+.btn {
+  text-decoration: none;
+} 
 
 a:hover {
   color: rgb(223, 223, 223);
@@ -209,6 +217,14 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+}
+
+.logo {
+  width: 40px;
+}
+
+.chrome {
+  width: 45px;
 }
 
 svg {
