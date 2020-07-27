@@ -1,0 +1,28 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: afterworkbeer-startpage-ingress
+  namespace: fuebiapp
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  tls:
+    - secretName: afterworkbeer-com-tls
+      hosts:
+        - afterworkbeer.com
+  rules:
+  - host: afterworkbeer.com
+    http:
+        paths:
+          - backend:
+              serviceName: fuebiapp-startpage-service
+              servicePort: 80
+  - host: www.afterworkbeer.com
+    http:
+        paths:
+          - backend:
+              serviceName: fuebiapp-startpage-service
+              servicePort: 80
+
