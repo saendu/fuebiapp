@@ -2,21 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: fuebiapp-startpage
-  namespace: jitsi
+  namespace: fuebiapp
   labels:
-    app: fuebiapp
+    app: fuebiapp-startpage
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: fuebiapp
+      app: fuebiapp-startpage
   template:
     metadata:
       labels:
-        app: fuebiapp
+        app: fuebiapp-startpage
     spec:
       containers:
-      - name: fuebiapp
+      - name: fuebiapp-startpage
         image: blacktr/fuebi-startpage:latest
         ports:
         - containerPort: 80
